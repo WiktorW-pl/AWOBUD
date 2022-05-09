@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">  
+    <link rel="shortcut icon" href="/img/logoW.png">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>AWO BUD</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery.scrollTo.min.js"></script> 
+    <script>
+		
+		jQuery(function($)
+		{
+			
+			$.scrollTo(0);
+			
+			$('#link1').click(function() { $.scrollTo($('#stronaglowna'), 500); });
+			$('#link2').click(function() { $.scrollTo($('#projekty'), 500); });
+			$('#link3').click(function() { $.scrollTo($('#onas'), 500); });
+			$('#link4').click(function() { $.scrollTo($('#uslugi'), 500); });
+            $('#link5').click(function() { $.scrollTo($('#kontakt'), 500); });
+	
+			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
+		}
+		);
+		
+		
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();		
+		}
+		);
+	
+	
+	</script>
+</head>
+<body>
+    <nav class="nav">
+        <div class="nav__hamburger">
+            <p id="work-info"><a href="work.html">Ogłoszenia o pracę</a></p>
+        </div>
+        
+        <ul class="nav__list">
+                <li class="nav__item"><a id="link1" href="#">Strona Główna</a></li>
+                <li class="nav__item"><a id="link2" href="#">Projekty</a></li>
+                <li class="nav__item"><a id="link3" href="#">O nas</a></li>
+                <li class="nav__item"><a id="link4" href="#">Usłgi</a></li>
+                <li class="nav__item"><a id="link5" href="#">Kontakt</a></li>
+                <div class="progress-bar" id="myBar"></div>
+        </ul>
+    </nav>
+
+    <div class="main-page" id="stronaglowna">
+        <img src="img/main-logo.png" alt="" class="main-page__logo">
+    </div>
+
+    <div class="projects" id="projekty">
+        <h1 class="projects__tittle">Nasze projekty</h1>
+        <p class="projects__text">Zobacz galerię zdjęć prezentującą wykonywane prace przez AWOBUD</p>
+        <div class="slider">
+           <img src="/gallery/(33).jpg" alt="">
+        </div>
+        <button class="projects__button"><a href="gallery.html">Zobacz galerię zdjęć!</a></button>
+    </div>
+
+    <div class="separation">
+        <div class="separation__block"><img src="img/2.jpg" id="img-separation" alt="">
+            <svg width="300" height="300" viewBox="0 0 300 300" fill="none" class="separation-svg" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_10:29)">
+                <path d="M150 25C81 25 25 81 25 150C25 219 81 275 150 275C219 275 275 219 275 150C275 81 219 25 150 25ZM125 212.5L62.5 150L80.125 132.375L125 177.125L219.875 82.25L237.5 100L125 212.5Z" fill="white"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_10:29" x="-4" y="0" width="308" height="308" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_10:29"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_10:29" result="shape"/>
+                </filter>
+                </defs>
+            </svg>
+        </div>
+        <div class="separation__block" id="block-blue"><img src="img/img-slider.jpg" id="img-separation" alt="">
+            <svg width="300" height="300" viewBox="0 0 300 300" fill="none" class="separation-svg" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_10:32)">
+                <path d="M125 250V175H175V250H237.5V150H275L150 37.5L25 150H62.5V250H125Z" fill="white"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_10:32" x="-4" y="0" width="308" height="308" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_10:32"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_10:32" result="shape"/>
+                </filter>
+                </defs>
+            </svg>     
+        </div>
+        <div class="separation__block"><img src="img/3.jpg" id="img-separation" alt="">
+            <svg width="300" height="300" viewBox="0 0 300 300" fill="none" class="separation-svg" xmlns="http://www.w3.org/2000/svg">
+                <g filter="url(#filter0_d_10:35)">
+                <path d="M149.875 25C80.875 25 25 81 25 150C25 219 80.875 275 149.875 275C219 275 275 219 275 150C275 81 219 25 149.875 25ZM150 250C94.75 250 50 205.25 50 150C50 94.75 94.75 50 150 50C205.25 50 250 94.75 250 150C250 205.25 205.25 250 150 250Z" fill="white"/>
+                <path d="M156.25 87.5H137.5V162.5L203.125 201.875L212.5 186.5L156.25 153.125V87.5Z" fill="white"/>
+                </g>
+                <defs>
+                <filter id="filter0_d_10:35" x="-4" y="0" width="308" height="308" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_10:35"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_10:35" result="shape"/>
+                </filter>
+                </defs>
+            </svg>
+        </div>
+    </div>
+
+    <div class="about-us" id="onas">  
+        <h1 class="about-us__title">O nas</h1>
+        <div class="about-us__container">
+            <img src="img/profile-img.jpg" class="about-us__img" alt="">
+            <div class="about-us__content">
+                <p class="about-us__text" id="text">AWOBUD Andrzej Woźny <br> Świadczę kompleksowe usługi remontowo-budowlane w województwie lubuskim. 
+                    Posiadam w tym zakresie wieloletnie doświadczenie. Stawiam na jakość, terminowość i konkurencyjne ceny. Oferuję indywidualne podejście 
+                    do każdego klienta, dobry kontakt, doradztwo i wsparcie. <br> Zapraszam do współpracy!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="service" id="uslugi">
+        <div class="service__header">
+            <div class="section-1">
+                <h1 class="service-title">Usługi</h1>
+            </div>
+            <div class="section-2">
+
+            </div>
+        </div>  
+    </div>
+        <div class="services">
+            <div class="services__tile"><h1>Prace budowlane i wykończeniowe</h1></div>
+            <div class="services__tile"><h1>Szpachlowanie</h1></div>
+            <div class="services__tile"><h1>Montaż ścianek i sufitów z KG</h1></div>
+            <div class="services__tile"><h1>Ocieplanie budynków</h1></div>
+            <div class="services__tile"><h1>Lorem ipsum</h1></div>
+            <div class="services__tile"><h1>Lorem ipsum dolor</h1></div>
+        </div>       
+    <div class="contact" id="kontakt">
+        <h1 class="contact__title">Kontakt</h1>
+            <div class="card">
+                <div class="row">
+                  <div class="col">
+                    <div class="form-group">
+                      <label id="label-text">Imię</label>
+                      <input type="text" id="name">
+                    </div>
+                  </div>
+              
+                  <div class="col">
+                    <div class="form-group">
+                      <label id="label-text">Nazwisko</label>
+                      <input type="text">
+                    </div>
+                  </div>
+              
+                  <div class="col">
+                    <div class="form-group">
+                      <label id="label-text">E-mail</label>
+                      <input type="text" id="emial">
+                    </div>
+                  </div>
+              
+                  <div class="col">
+                    <div class="form-group">
+                      <label id="label-text">Numer telefonu</label>
+                      <input type="text">
+                    </div>
+                  </div>
+              
+                  <div class="col">
+                    <div class="form-group">
+                      <label id="label-text">Treść wiadomości</label>
+                      <textarea id="textarea"></textarea>
+                    </div>
+                  </div>
+                  <div class="col" id="test">
+                    <div class="form-group">
+                        <button class="form-button">Wyślij wiadomość</button>
+                    </div>
+                  </div>
+                </div>
+            </div>
+    </div>
+    <div class="footer">    
+        <div class="footer__section-1">
+            <img src="img/logo.png" style="max-width: 300px; height: auto;" alt="">
+        </div>
+        <div class="footer__section-2">
+            <span class="section-2__item">
+                <svg width="50px" height="auto" viewBox="0 0 74 75" fill="none" class="footer-svg" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_10:18)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M44.3167 0.0261821C43.5888 -0.0794013 42.8577 0.138364 42.276 0.606891C41.6781 1.08202 41.3044 1.76831 41.2231 2.53709C41.0509 4.09114 42.159 5.49672 43.6928 5.67159C54.2702 6.86601 62.4917 15.2038 63.6811 25.9403C63.8403 27.3789 65.0329 28.4644 66.4562 28.4644C66.5635 28.4644 66.6674 28.4578 66.7747 28.4446C67.5188 28.3621 68.1818 27.9893 68.6497 27.3954C69.1144 26.8015 69.3256 26.0624 69.2411 25.3068C67.7593 11.9109 57.5133 1.51425 44.3167 0.0261821ZM44.5199 11.5203C42.9666 11.2299 41.54 12.2329 41.2443 13.7672C40.9486 15.3015 41.943 16.7995 43.454 17.0997C48.0035 17.9972 51.5163 21.5607 52.4067 26.18V26.1833C52.6601 27.513 53.817 28.4797 55.1493 28.4797C55.3281 28.4797 55.5068 28.4632 55.6888 28.4302C57.1998 28.1234 58.1942 26.6287 57.8985 25.0911C56.5694 18.1919 51.3213 12.8632 44.5199 11.5203ZM49.6818 43.2241C51.1549 42.3645 52.8187 41.3938 54.9175 41.8455C56.8186 42.2514 63.2983 47.5735 65.0725 49.4179C66.2359 50.6255 66.8825 51.8727 66.9833 53.1199C67.1588 58.0131 60.5881 63.5992 59.3922 64.2954C57.8032 65.4535 55.9542 66.0375 53.8777 66.0375C51.7557 66.0375 49.39 65.4271 46.8098 64.2096C32.8106 58.2969 11.425 37.0843 5.77068 23.0284C3.42448 17.7954 3.40823 13.4796 5.73169 10.2362C6.65782 8.71513 11.9384 2.35697 16.6666 2.55824C17.9242 2.66712 19.146 3.32043 20.3451 4.50825C22.1584 6.30649 27.2862 12.8824 27.6827 14.8126C28.1214 16.9573 27.1595 18.6632 26.3049 20.1611C26.1226 20.4831 25.877 20.8653 25.6079 21.2839C24.5867 22.8729 23.2275 24.9877 23.7084 26.3378C27.1563 34.9033 35.121 42.3767 43.5895 45.8874C44.8991 46.369 46.9879 44.9838 48.5531 43.9459C48.9608 43.6755 49.3331 43.4286 49.6467 43.2445L49.6818 43.2241Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_10:18" x="0" y="0" width="73.2593" height="74.0371" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_10:18"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_10:18" result="shape"/>
+                    </filter>
+                    </defs>
+                </svg>
+                    <p class="item__text" id="footer__text">602 182 717</p>
+            </span> 
+            <span class="section-2__item">
+                <svg id="svg-email" width="50px" height="auto" viewBox="0 0 81 79" fill="none" class="footer-svg" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_10:23)">
+                    <path d="M71.661 21.4715C70.7047 19.8019 68.8876 18.797 66.925 18.8392L21.1694 19.7878C19.1058 19.8063 17.3341 20.9475 16.446 22.7544C15.5408 24.5929 16.1757 27.3943 17.6036 28.8703L28.6904 40.3262C29.8276 41.5007 31.6408 41.756 33.0718 40.9401L52.368 29.9666C53.3464 29.3883 54.6128 29.7201 55.1644 30.6994C55.7232 31.6528 55.3889 32.8729 54.4105 33.4513L35.0871 44.4204C33.6543 45.2331 32.9702 46.9042 33.4342 48.4615L37.9519 63.6969C38.4749 65.5035 39.8687 66.8148 41.6626 67.2849C41.8737 67.3402 42.1111 67.4024 42.3293 67.4317C44.4582 67.7113 46.4708 66.764 47.6111 64.976L71.5545 26.8138C72.5922 25.1937 72.6173 23.1412 71.661 21.4715Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_10:23" x="-4.00002" y="0" width="88.2486" height="86.4805" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_10:23"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_10:23" result="shape"/>
+                    </filter>
+                    </defs>
+                </svg>
+                    <p class="item__text" id="footer__text">awobud.biuro@gmail.com</p>
+            </span>
+            <span class="section-2__item">
+                <svg width="50px" height="auto" viewBox="0 0 73 87" fill="none" class="footer-svg" xmlns="http://www.w3.org/2000/svg">
+                    <g filter="url(#filter0_d_10:14)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M57.6943 20.8997C57.6943 32.501 48.1829 41.8033 36.3119 41.8033C24.445 41.8033 14.9296 32.501 14.9296 20.8997C14.9296 9.2984 24.445 0 36.3119 0C48.1829 0 57.6943 9.2984 57.6943 20.8997ZM36.312 78.9999C18.7923 78.9999 4 76.2151 4 65.471C4 54.723 18.8852 52.0369 36.312 52.0369C53.8357 52.0369 68.624 54.8217 68.624 65.5658C68.624 76.3139 53.7387 78.9999 36.312 78.9999Z" fill="white"/>
+                    </g>
+                    <defs>
+                    <filter id="filter0_d_10:14" x="0" y="0" width="72.624" height="87" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="2"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_10:14"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_10:14" result="shape"/>
+                    </filter>
+                    </defs>
+                </svg>
+                    <p class="item__text" id="footer__text">Andrzej Woźny</p>
+            </span>
+        </div>
+        <div class="footer__section-3">
+            <p class="section-3__text" id="footer__text">Copyright© 2020 AWOBUD Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
