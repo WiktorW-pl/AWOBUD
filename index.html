@@ -69,32 +69,37 @@
         <a href="#">Kliknij w ten link, aby zobaczyć zdjęcia</a>
     </div>
     <div class="contact">
+        <div class="contact__container">
+        <h3 class="contact__title">Czekamy na Twoją wiadomość</h3>
         <form>
-            <div class="name-phone">
-            <div class="contact__input">
+        <div class="name-email-container">
+            <div class="inputContainer">
               <label for="name">Imię</label>
-              <input type="text" id="name" class="input" name="user_name">
+              <input type="text" id="name" class="inputContainer__input" name="user_name">
             </div>
           
-            <div class="contact__input">
+            <div class="inputContainer">
               <label for="mail">Numer telefonu</label>
-              <input type="email" class="input" name="user_email">
+              <input type="email" class="inputContainer__input" name="user_email">
             </div>
         </div>
-            <div class="contact__input">
-                <label for="mail">Adres e-mail</label>
-                <input type="email" id="mail" class="input" name="user_email">
-              </div>
+
+        <div class="inputContainer">
+            <label for="mail">Adres e-mail</label>
+            <input type="email" id="mail" class="inputContainer__input" name="user_email">
+        </div>
           
-            <div class="contact__textarea">
-              <label for="msg">Twoja wiadomość:</label>
-              <textarea id="msg" name="user_message"></textarea>
-            </div>
+        <div class="textareaContainer">
+            <label for="msg">Twoja wiadomość:</label>
+            <textarea id="msg" class="textareaContainer__textarea" name="user_message"></textarea>
+        </div>
           
-            <div class="contact__buttons">
+        <div class="buttons-container">
               <button class="contact__button">Wyślij wiadomość</button>   
+        </div>
         </form>
     </div>
+</div>
    <script src="main.js"></script>
 </body>
 </html>
