@@ -352,6 +352,8 @@ footer {
 }
 
 .copyright {
+  transform: translateY(-1px);
+  max-width: 100%;
   background-color: #AF282E;
   display: flex;
   justify-content: center;
@@ -398,6 +400,14 @@ footer {
 
   .employment-offer a {
     margin-bottom: 20px;
+  }
+
+  .section__title {
+    font-size: 15px;
+  }
+
+  #section-name {
+    display: none;
   }
 }
 @media only screen and (max-width: 1020px) {
@@ -462,6 +472,14 @@ footer {
     margin-left: 50px;
     margin-right: 50px;
   }
+
+  .section__title {
+    font-size: 20px;
+  }
+
+  .section__text {
+    font-size: 12px;
+  }
 }
 @media only screen and (max-width: 690px) {
   .contact__title {
@@ -482,6 +500,10 @@ footer {
   #name {
     margin-right: 0px;
   }
+
+  footer {
+    height: 214px;
+  }
 }
 @media only screen and (max-width: 395px) {
   .contact__title {
@@ -490,5 +512,9 @@ footer {
 
   form {
     margin-top: 0px;
+  }
+
+  .copyright__text {
+    font-size: 15px;
   }
 }/*# sourceMappingURL=style.css.map */
