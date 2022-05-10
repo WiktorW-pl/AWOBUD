@@ -324,6 +324,38 @@ label {
   color: #000;
 }
 
+.buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  margin: 100px;
+}
+.buttons__phone {
+  width: 100%;
+  height: 140px;
+  background-color: #AF282E;
+  margin-right: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.buttons__mail {
+  width: 100%;
+  height: 140px;
+  background-color: #003478;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.buttons__text {
+  font-size: 35px;
+  text-align: center;
+}
+.buttons__svg {
+  margin: 20px;
+}
+
 footer {
   max-width: 100%;
   height: 264px;
