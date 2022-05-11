@@ -337,7 +337,7 @@ label {
   background-color: #AF282E;
   margin-right: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 .buttons__mail {
@@ -345,8 +345,9 @@ label {
   height: 140px;
   background-color: #003478;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  padding-left: 50px;
 }
 .buttons__text {
   font-size: 35px;
@@ -441,6 +442,11 @@ footer {
   #section-name {
     display: none;
   }
+
+  .buttons__text {
+    font-size: 20px;
+    text-align: center;
+  }
 }
 @media only screen and (max-width: 1020px) {
   .about-us__title h2 {
@@ -464,6 +470,18 @@ footer {
 
   .employment-offer h3 {
     font-size: 30px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    max-width: 100%;
+  }
+  .buttons__mail {
+    padding-left: 0px;
+  }
+  .buttons__svg {
+    max-width: 50%;
+    max-height: 50%;
   }
 }
 @media only screen and (max-width: 820px) {
@@ -546,7 +564,15 @@ footer {
     margin-top: 0px;
   }
 
+  .contact__container {
+    max-width: 100%;
+  }
+
   .copyright__text {
     font-size: 15px;
+  }
+
+  .buttons__svg {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
