@@ -13,3 +13,8 @@ function myFunction(x) {
   var x = window.matchMedia("(max-width: 700px)")
   myFunction(x) 
   x.addListener(myFunction) 
+
+const contactBtn = document.querySelector('#contactFormButton')
+
+contactBtn.addEventListener("click", contactForm);
+
