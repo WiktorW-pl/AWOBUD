@@ -14,7 +14,13 @@ function myFunction(x) {
   myFunction(x) 
   x.addListener(myFunction) 
 
-const contactBtn = document.querySelector('#contactFormButton')
+const hamburger = document.querySelector('.hamburger');
+const hamburgerNav = document.querySelector('.hamburger-navigation');
 
-contactBtn.addEventListener("click", contactForm);
+const handleClick = () =>{
+    hamburger.classList.toggle('hamburger--active');
+    hamburgerNav.classList.toggle('hamburger-navigation--active');
+}
+
+hamburger.addEventListener('click', handleClick)
 
