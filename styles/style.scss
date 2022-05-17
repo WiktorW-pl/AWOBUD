@@ -4,6 +4,15 @@
     padding: 0;
     color: #fff;
 }
+:root {
+    color-scheme: light only;
+}
+body{
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+}
 nav{
     width: 100%;
     height: 60px;
@@ -16,9 +25,13 @@ nav{
 }
 a{
     text-decoration: none;
+    cursor: pointer;
 }
 a:hover{
     color: rgb(163, 163, 163);
+}
+.active-link{
+    font-weight: 900;
 }
 .hamburger{
     display: none;
@@ -117,6 +130,7 @@ header{
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    scroll-snap-align: start;
 }
 .logo{
     transform: translateY(-40px);
@@ -172,12 +186,14 @@ button{
     display: flex;
     justify-content: center;
     align-items: center;
+    scroll-snap-align: start;
     &__svg{
         max-width: 100%;
         height: auto;
     }
 }
 .about-us{
+    scroll-snap-align: start;
     max-width: 100%;
     height: auto;
     display: flex;
@@ -236,6 +252,7 @@ button{
     }
 }
 .employment-offer{
+    scroll-snap-align: start;
     max-width: 100%;
     height: 400px;
     background-image: url(/img/employment.webp);
@@ -271,6 +288,7 @@ button{
     }
 }
 .projects-gallery{
+    scroll-snap-align: start;
     max-width: 100%;
     height: 400px;
     background-image: url(/img/gallery.webp);
@@ -299,6 +317,7 @@ button{
     }
 }
 .contact{
+    scroll-snap-align: start;
     max-width: 100%;
     background-image: url(/img/background-contact.webp);
     background-size: cover;
@@ -621,5 +640,20 @@ footer{
 @media only screen and (max-width: 600px){
     .hamburger{
         top: 5px;
+    }
+}
+@media (prefers-color-scheme: dark) {
+    button{
+        background-color: #fff;
+        color: #000;
+    }
+    a{
+        color: #fff;
+    }
+    .separation{
+        background-color: #fff;
+    }
+    body{
+        background-color: #fff;
     }
 }
