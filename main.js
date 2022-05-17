@@ -91,4 +91,13 @@ const seeMoreFn = () =>{
         behavior: "smooth"
     });
 }
+
+const contactBtn = document.querySelector('.about-us__button');
+const contactFn = () =>{
+    window.scrollTo({
+        top: 2860,
+        behavior: "smooth"
+    });
+}
 seeMoreBtn.addEventListener('click', seeMoreFn);
+contactBtn.addEventListener('click', contactFn);
