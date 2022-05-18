@@ -20,4 +20,4 @@ The site is featured as a business card with a functional contact form.
 
 ### Lighthouse result 
 
-![Lighthouse](/lighthouse-awobud.JPG)
+![Lighthouse](img/lighthouse-awobud.JPG)

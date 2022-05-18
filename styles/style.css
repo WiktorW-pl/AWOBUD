@@ -427,6 +427,10 @@ form {
   color: #fff;
 }
 
+.contact__button:hover {
+  background-color: #003478;
+}
+
 .textareaContainer {
   display: flex;
   flex-direction: column;
