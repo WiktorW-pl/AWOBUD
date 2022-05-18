@@ -523,6 +523,61 @@ footer {
   margin-bottom: 10px;
 }
 
+.header-gallery {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-image: url(/img/background-contact.webp);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.header-gallery__logo {
+  max-width: 601px;
+  height: auto;
+}
+.header-gallery__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 570px;
+  height: 60px;
+  background-color: #AF282E;
+}
+
+.header-gallery__title {
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 51px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.295em;
+  color: #FFFFFF;
+}
+
+.header-gallery__btn {
+  background-color: #003478;
+  color: #fff;
+  width: 222px;
+  height: 44px;
+  font-family: "Rajdhani";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: -0.015em;
+  transform: translateY(-20px);
+}
+
+.header-gallery__btn:hover {
+  background-color: #AF282E;
+}
+
 @media only screen and (max-width: 600px) {
   .logo__title {
     font-size: 28px;
@@ -564,6 +619,20 @@ footer {
   .buttons__text {
     font-size: 20px;
     text-align: center;
+  }
+
+  .header-gallery {
+    display: flex;
+  }
+  .header-gallery__logo {
+    max-width: 301px;
+  }
+  .header-gallery__container {
+    width: 335px;
+  }
+
+  .header-gallery__title {
+    font-size: 30px;
   }
 }
 @media only screen and (max-width: 1020px) {
@@ -707,6 +776,25 @@ footer {
 
   .buttons__svg {
     display: none;
+  }
+
+  .header-gallery {
+    display: flex;
+  }
+  .header-gallery__logo {
+    max-width: 201px;
+  }
+  .header-gallery__container {
+    width: 235px;
+  }
+
+  .header-gallery__title {
+    font-size: 20px;
+  }
+
+  .header-gallery__btn {
+    width: 150px;
+    font-size: 15px;
   }
 }
 @media only screen and (max-width: 600px) {
