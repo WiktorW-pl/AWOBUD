@@ -101,3 +101,20 @@ const contactFn = () =>{
 }
 seeMoreBtn.addEventListener('click', seeMoreFn);
 contactBtn.addEventListener('click', contactFn);
+
+const workOffer = document.querySelector('#work-offer')
+const workOfferText = document.querySelector('.work-offer-title')
+const text = "Firma AWOBUD niestety aktualnie nie poszukuję nowego pracownika"
+let index = 0;
+
+const workOfferFn = () =>{
+    workOfferText.textContent = '';
+    myInterval = setInterval(()=>{
+        workOfferText.textContent += text[index++];
+        if(index === text.length){
+            index = 0;
+            clearInterval(myInterval);
+        } 
+    }, 40)
+}
+workOffer.addEventListener('click', workOfferFn)
