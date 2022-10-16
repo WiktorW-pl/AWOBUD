@@ -31,6 +31,8 @@ The site is featured as a business card with a functional contact form.
 I decided to use cypress to do e2e test for every app in my project. 
 <br />
 <br />
+![cypress-raport-screenshot]
+
 You can find all CI results recorded on the 
 <br />
 https://dashboard.cypress.io/projects/ybrdtr/runs/1/overview
@@ -57,3 +59,4 @@ https://dashboard.cypress.io/projects/ybrdtr/runs/1/overview
 [sass-url]: https://sass-lang.com/
 [css.com]: https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
 [css-url]: https://developer.mozilla.org/en-US/docs/Web/CSS
+[cypress-raport-screenshot]: <img/cypress-raport.PNG>
